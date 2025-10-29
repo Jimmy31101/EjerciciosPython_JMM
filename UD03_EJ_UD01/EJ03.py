@@ -1,6 +1,6 @@
-l = int(input("Introduce el lado del cuadrado: "))
+lado = int(input("Introduce el lado del cuadrado: "))
 
-if l > 0:
-    area = (l * l)
+if lado > 0:
+    area = (lado * lado)
 
 print("El área del cuadrado con lado ", l, " es: ", area)
