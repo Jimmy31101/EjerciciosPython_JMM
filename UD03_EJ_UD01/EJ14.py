@@ -7,11 +7,11 @@ if num1 & num2 > 0:
     resta = num1 - num2
     producto = num1 * num2
     division = num1 / num2
-    
+
     print("Suma: ", suma,
           "\nResta: ", resta,
           "\nProducto: ", producto,
           "\nDivisión: ", division)
-    
+
 else:
     print("Introduce un número mayor a 0.")
