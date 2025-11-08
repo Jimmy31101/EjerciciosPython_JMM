@@ -1,6 +1,11 @@
-num = int(input("Inserta un número: "))
+import random
+randnum = random.randint(1, 100)
 
-contador = 0
+print("Bienvenido a Adivina el Número \n tienes 7 intentos para adivinar el número que piensa el ordenador.")
+num = int(input("\nInserta un número entre 1 y 100: "))
 
-while num != 0:
-    print()
+intentos = 0
+
+match num:
+    case 1:
+        num
