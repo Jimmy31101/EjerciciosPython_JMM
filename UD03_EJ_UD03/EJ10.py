@@ -14,5 +14,6 @@ if num1 & num2 > 0:
           "\nProducto: ", producto,
           "\nDivisión: ", division)
 
+#Imprime por consola que introduzca un número mayor a 0
 else:
     print("Introduce un número mayor a 0.")
