@@ -1,11 +1,13 @@
 #Inicializamos el total de la venta
 totalVenta = float(input("Introduce el total de la venta: "))
 ventaFinal = 0
+descuentoTotal = 0
+precioFinal = 0
 
 #Muestra un mensaje de bienvenida al cliente y el menú
 print("\nBienvenido a Kawanda")
 
-#Bucle del menú interactivo
+#Menú interactivo
 while (True):
     print("""\nElige una de las opciones para continuar:
       1. Pago en efectivo
@@ -17,18 +19,18 @@ while (True):
     opcion = int(input())
 
     if opcion == 1:
-        totalVenta *= 0.05
-        ventaFinal -= totalVenta
-        print("""Total de la compra, descuento 5%: """, ventaFinal)
+        ventaFinal = (totalVenta * 5) / 100
+        precioFinal = totalVenta - ventaFinal
+        print("""\nTotal de la compra, descuento 5%: """, precioFinal)
 
     elif opcion == 2:
-        totalVenta *= 0.03
-        ventaFinal -= totalVenta
-        print("""Total de la compra, descuento 3%: """, ventaFinal)
+        ventaFinal = (totalVenta * 3) / 100
+        precioFinal = totalVenta - ventaFinal
+        print("""\nTotal de la compra, descuento 3%: """, precioFinal)
 
     elif opcion == 3:
-        print("¡Hasta la próxima!, gracias por comprar en Kawanda")
+        print("\n¡Hasta la próxima!, gracias por comprar en Kawanda")
         break
 
     else:
-        print("Comando desconocido, vuelve a intentarlo")
+        print("\nComando desconocido, vuelve a intentarlo")
