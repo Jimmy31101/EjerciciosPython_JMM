@@ -1,7 +1,6 @@
 #Inicializamos el total de la venta
 totalVenta = float(input("Introduce el total de la venta: "))
 ventaFinal = 0
-descuentoTotal = 0
 precioFinal = 0
 
 #Muestra un mensaje de bienvenida al cliente y el menú
@@ -16,19 +15,19 @@ while (True):
 
     print("\nTotal de la venta sin descuento:", totalVenta, "\n")
 
-    opcion = int(input())
+    option = int(input())
 
-    if opcion == 1:
+    if option == 1:
         ventaFinal = (totalVenta * 5) / 100
         precioFinal = totalVenta - ventaFinal
         print("""\nTotal de la compra, descuento 5%: """, precioFinal)
 
-    elif opcion == 2:
+    elif option == 2:
         ventaFinal = (totalVenta * 3) / 100
         precioFinal = totalVenta - ventaFinal
         print("""\nTotal de la compra, descuento 3%: """, precioFinal)
 
-    elif opcion == 3:
+    elif option == 3:
         print("\n¡Hasta la próxima!, gracias por comprar en Kawanda")
         break
 
