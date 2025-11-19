@@ -12,17 +12,15 @@ for i in range(altura + 1):
 
     #Print de asteriscos
     for j in range(i + 1):
-        if j == altura - 1 or i + j == altura - 1 or i == j or i == 5:
+        if i == 0 or j == 0 or j == i:
             print("*", end=" ")
 
         else:
             print(" ", end=" ")
     print()
 
-print
-
 #Triángulo inferior
-for i in range(altura - 1, 0, - 1):
+for i in range(altura - 1, - 1, - 1):
 
     #Print de espacios
     for j in range(i, altura):
@@ -30,7 +28,7 @@ for i in range(altura - 1, 0, - 1):
 
     #Print de asteriscos
     for j in range(i + 1):
-        if i == 0 or j == i or j == altura - 1:
+        if i == 0 or j == 0 or j == i:
             print("*", end=" ")
 
         else:
