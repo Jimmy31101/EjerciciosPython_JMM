@@ -10,4 +10,4 @@ for i in range(1, exp + 1):
     resultado *= num
 
 #Muestra el resultado en la consola
-print(resultado)
+print(num, "elevado a", exp, "es igual a:", resultado)
