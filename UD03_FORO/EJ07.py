@@ -1,5 +1,15 @@
 #Ejercicio 4 Cuadrado con diagonales y borde relleno
 
+"""
+*******
+* *   *
+*  *  *
+*   * *
+*  *  *
+* *   *
+*******
+"""
+
 n = 7
 
 #Print de las filas

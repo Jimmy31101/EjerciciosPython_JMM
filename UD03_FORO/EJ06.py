@@ -25,4 +25,4 @@ for i in range(n - 1):
         else:
             print(" ", end="")
     print()
-print("*" * 11)
+print("*" * (n * 2 - 1))

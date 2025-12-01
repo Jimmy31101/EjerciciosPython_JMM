@@ -1,28 +1,29 @@
-#Ejercicio 8 Rombo Sólido
+#Ejercicio 6 Letra M mayúscula con asteriscos
 
-#Pide al usuario la altura del rombo
-altura = int(input("Introduce una altura para la figura:"))
+"""
+*     *
+**   **
+* * * *
+*  *  *
+*     *
+*     *
+*     *
+"""
 
-#Primer triángulo
-for i in range(altura):
+n = 7
 
-    #Print del primer hueco
-    for j in range(altura - i - 1):
-        print(" ", end="")
+for i in range(n):
 
-    #Print del primer triángulo
-    for k in range(2 * i + 1):
-        print("*", end="")
-    print()
+    for j in range(n):
+        if j == 0 or j == n - 1:
+            print("*", end="")
 
-#Segundo triángulo invertido
-for i in range(altura - 2, - 1,  - 1):
+        elif (i == 4 and j % 2 == 0) or (i == 5 and j % 2 != 0):
+            print(" ", end="")
 
-    #Print del segundo hueco
-    for j in range(altura - i - 1):
-        print(" ", end="")
+        elif j == i or i + j == n - 1:
+            print("*", end="")
 
-    #Print del segundo triángulo
-    for k in range(2 * i + 1):
-        print("*", end="")
+        else:
+            print(" ", end="")
     print()
