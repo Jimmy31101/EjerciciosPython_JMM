@@ -1,4 +1,4 @@
-#Construir manualmente una nueva cadena añadiendo un carácter a la vez (ejemplo: filtrar caracteres o construir cadenas invertidas).
+#Leer una cadena y construir una nueva cadena con los caracteres en orden inverso.
 
 #String
 word = "Un string"
