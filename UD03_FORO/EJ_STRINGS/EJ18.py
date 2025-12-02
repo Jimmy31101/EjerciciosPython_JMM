@@ -6,8 +6,10 @@ newString = ""
 cons = "bcdfghjklmnñpqrstvwxyz"
 j = - 1
 
-for i in range(cons):
+for i in string:
     j += 1
 
-    if i :
-        
+    if i in cons:
+        newString += i
+
+print(newString)

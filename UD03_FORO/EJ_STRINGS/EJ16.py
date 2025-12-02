@@ -6,7 +6,7 @@ string2 = "Atleti"
 newString= ""
 
 #Bucles para recorrer los strings caracter por caracter
-for i in string1, string2:
+for i in string1, " ", string2:
     newString += i
 
 #Muestra por consola los strings concatenados
